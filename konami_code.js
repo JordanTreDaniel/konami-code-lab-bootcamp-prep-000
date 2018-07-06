@@ -10,13 +10,18 @@ const codes = [
   "b",
   "a"
 ];
-var lastTenKeys = [];
+var i = 0;
 function init() {
   // your code here
   document.body.addEventListener('keydown',
     function(e) {
       e.preventDefault();
-      if (lastTenKeys == )
+      if (codes[i] === e.key) {
+        i++;
+        if (i === codes.length) {
+          alert("Hooray!");
+        }
+      } 
     }
   )
 }
