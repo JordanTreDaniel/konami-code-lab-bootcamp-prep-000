@@ -21,7 +21,9 @@ function init() {
         if (i === codes.length) {
           alert("Hooray!");
         }
-      } 
+      } else {
+        i = 0;
+      }
     }
   )
 }
