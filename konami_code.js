@@ -13,5 +13,10 @@ const codes = [
 
 function init() {
   // your code here
-  document.body.addEventListener()
+  document.body.addEventListener(
+    function(e) {
+      e.preventDefault();
+      console.log(e.key);
+    }  
+  )
 }
